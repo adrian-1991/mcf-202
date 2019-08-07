@@ -18,6 +18,7 @@ shapiro.test(Datos$Ansiedad)
 bartlett.test(Datos$Ansiedad, Datos$Grupo)
 
 library(pastecs)
+by(Datos$Ansiedad, Datos$Grupo, stat.desc, basic= FALSE, norm =TRUE)
 
 costal <- c(87.7, 80.01, 77.28, 78.76, 81.52, 74.2, 80.71, 79.5, 77.87, 81.94, 80.7,
             82.32, 75.78, 80.19, 83.91, 79.4, 77.52, 77.62, 81.4, 74.89, 82.95,
