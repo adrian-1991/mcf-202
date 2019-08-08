@@ -60,6 +60,6 @@ boxplot(produccion$Germ)
 
 tapply(produccion$Germ, produccion$Tiempo, mean)
 
-boxplot(produccion$Germ ~ inventario$Tiempo)
+boxplot(produccion$Germ, produccion$Tiempo)
 
 t.test(produccion$Germ ~ produccion$Tiempo, paired = T)
