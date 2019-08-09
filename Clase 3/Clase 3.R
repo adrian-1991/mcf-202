@@ -11,8 +11,8 @@ Datos <- data.frame(Grupo, Ansiedad)
 head(Datos)
 boxplot(Datos$Ansiedad ~ Datos$Grupo, col= "red", ylab = "nivelde ansiedad")
 
-length(fotografias)
-length(araña)
+length("fotografias")
+length("araña")
 
 
 shapiro.test(Datos$Ansiedad)
